@@ -1,0 +1,46 @@
+
+@font-face {
+    font-family: 'seven_segmentregular';
+    src: url('Fuentes/seven_segment-webfont.woff2') format('woff2'),
+         url('Fuentes/seven_segment-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+    
+    --bkColor: #000000;
+    --relojColor: #267e03;
+    --bkRelojColor: #363534c4;
+    background-color: var(--bkColor);
+
+
+}
+.container {
+    height: 100vh;
+    width: 70vw;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.relojContainer{
+    
+    font-family: 'seven_segmentregular';
+    font-size: xxx-large;
+    color: var(--relojColor);
+    width: 100%;
+    background-color: var(--bkRelojColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem auto;
+    border-radius: 50px;
+    transition: transform .7s;
+    cursor: pointer;
+}
+.relojContainer:hover{
+    transform: scale(2);
+}
